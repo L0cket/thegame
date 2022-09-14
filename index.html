@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <main>
+        <section class="main_menu">
+            <div class="main_menu_content">
+                <form action="#" method='get' name='menu'>
+                    <div class="menu_selects">
+                        <div class="menu_select">
+                            <h3 class="select_title">Horizontal even number of cards(2 to 10):</h3>
+                            <input type="number" class='select_input' id="select_horiz_number" value='4'>
+                        </div>
+                        <div class="menu_select">
+                            <h3 class="select_title">Vertical even number of cards(2 to 10):</h3>
+                            <input type="number" class='select_input' id="select_vert_number" value='4'>
+                        </div>
+                        <div class="menu_select">
+                            <label class='select_title' for="select_timer">Add timer(1 minute):</label>
+                            <input type="checkbox" id="select_timer">
+                        </div>
+                        <div class="menu_select">
+                            <button id='start_btn'>Start</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="main_content">
+            <div id="main_timer">1:00</div>
+            <div class='main_container'>
+                <div class="main_popup">
+                    <h1 class="main_popup_title over">GAME OVER</h1>
+                    <h1 class="main_popup_title win">YOU WON</h1>
+                </div>
+            </div>
+            <div class="main_content_buttons">
+                <button id='backToSettings'>Back to settings</button>
+                <button id='againBtn' disabled>Play again</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/cb1ed71408.js" crossorigin="anonymous"></script>
+</html>
